@@ -1,0 +1,119 @@
+.ingest {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ingest__header {
+  text-align: center;
+}
+
+.ingest__logo {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #fff 0%, #888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.35rem;
+}
+
+.ingest__sub {
+  font-size: 0.8rem;
+  color: #666;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ingest__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ingest__vs {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #444;
+}
+
+.ingest__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.ingest__label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ingest__field--a .ingest__label { color: #7eb8ff; }
+.ingest__field--b .ingest__label { color: #ffb347; }
+
+.ingest__input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #e8e8e8;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.ingest__input::placeholder { color: #555; }
+.ingest__input:focus { border-color: rgba(255, 255, 255, 0.3); }
+.ingest__field--a .ingest__input:focus { border-color: rgba(126, 184, 255, 0.5); }
+.ingest__field--b .ingest__input:focus { border-color: rgba(255, 179, 71, 0.5); }
+.ingest__input:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.ingest__btn {
+  padding: 0.85rem;
+  background: #fff;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s;
+  letter-spacing: 0.02em;
+}
+.ingest__btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.ingest__btn:not(:disabled):hover { opacity: 0.88; }
+
+.ingest__spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+.ingest__progress {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #555;
+  letter-spacing: 0.03em;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
