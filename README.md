@@ -81,11 +81,10 @@ Ingest per creator (2 videos):
 Chat (15 turns × 1000 creators):
   Cohere query embed: 15K × 400 tokens = $0.0006/day total
   Pinecone query: 15K queries = ~$0.006/day
-  Claude Sonnet input (RAG context + history): ~800 tokens × 15K = $0.036/day
-  Claude Sonnet output: ~400 tokens × 15K = $0.09/day
+  Groq: Free tier
+  Gemini[optional]
 
-Total: ~$0.13/day for 1000 creators × 15 chat turns
-       $0.00013 per creator session
+Total: ~$0.0014/day if creators less than 1000/min else shift to paid
 ```
 
 **This is order-of-magnitude cheaper than any RAG-as-a-service offering.**
