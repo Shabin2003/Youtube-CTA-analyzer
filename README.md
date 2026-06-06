@@ -13,12 +13,12 @@ git clone https://github.com/your-org/video-rag
 cd video-rag
 
 # Backend
-cp backend/.env.example backend/.env
+cd backend/.env
 # Fill in ANTHROPIC_API_KEY, COHERE_API_KEY, PINECONE_API_KEY
 
 # Frontend
-cp frontend/.env.example frontend/.env
-# REACT_APP_API_URL=http://localhost:8000
+cd frontend/.env
+# set REACT_APP_API_URL=http://localhost:8000
 ```
 
 ### 2. Backend
@@ -34,8 +34,8 @@ uvicorn main:app --reload --port 8000
 
 ```bash
 cd frontend
-npm install
-npm start   # http://localhost:3000
+bun install # Or use npm install
+bun run dev  # click on / open http://localhost:3000
 ```
 
 ---
