@@ -19,7 +19,7 @@ import logging
 import os
 from typing import AsyncIterator, Literal, TypedDict
 from dotenv import load_dotenv 
-from langchain_google_vertexai import ChatVertexAI
+# from langchain_google_vertexai import ChatVertexAI
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage
 from langgraph.graph import StateGraph, END
