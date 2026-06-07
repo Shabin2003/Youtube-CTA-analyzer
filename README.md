@@ -1,7 +1,11 @@
 # VideoRAG — Creator Intelligence Platform
 
 Full-stack RAG chatbot that ingests two social media videos, embeds their transcripts into Pinecone, and enables streaming multi-turn chat with source citations.
-
+Helps in analyzing:
+- Why one youtube short performs better than other?(Video A vs Video B)[instagram needs authentication]
+- How to improve the video
+- What's the engagement rate and what are the key concepts used by video with higher engagement rates.
+- And many more questions you would like to ask
 ---
 
 ## Quick Start
