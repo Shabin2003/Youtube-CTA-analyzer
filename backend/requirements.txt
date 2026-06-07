@@ -14,13 +14,13 @@ youtube-transcript-api==1.2.4   # 1.x: instance-based API, FetchedTranscript.sni
 langchain==1.3.2
 langchain-core==1.4.0
 langchain-text-splitters==1.1.2 # 
-langchain-google-genai==4.2.4   # Gemini integration in langchain
+# langchain-google-genai==4.2.4   (Gemini integration in langchain not using in deployment due to vercel build constraint)
 langchain-community==0.4.2     
 langgraph==1.2.2            
 langchain-groq==1.1.2           # Groq
 
 # Google Gemini 
-google-genai==2.7.0             # underlying SDK used by langchain-google-genai
+# google-genai==2.7.0             (underlying SDK used by langchain-google-genai) [not using due to vercel build constraint]
 
 # Pinecone Vector DB
 pinecone==9.0.1                 # 9.x: list_indexes().names(), status.ready, keyword args
